@@ -11,9 +11,7 @@ def totalPrice():
     for price in priceList:
         total += int(price)
     print("Total Price :",total, "THB")
-
-        
-
+    
 while True:
     menuName = input("Please Enter menu :")
     if menuName.lower() == "exit":
@@ -22,7 +20,6 @@ while True:
         menuPrice = int(input("Price :"))
         menuList.append(menuName)
         priceList.append(menuPrice)
-
 
 showBill()
 totalPrice()
